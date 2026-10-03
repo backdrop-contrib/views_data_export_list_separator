@@ -34,17 +34,17 @@ class views_data_export_list_separator_plugin_style_export_csv extends views_dat
 
     $form['convert_lists'] = array(
       '#type' => 'checkbox',
-      '#title' => t('Convert ordered and unordered lists to separated values.'),
+      '#title' => t('Convert ordered and unordered lists to simple separated values.'),
       '#default_value' => !empty($this->options['convert_lists']),
-      '#description' => t('Only list markup in the CSV export is changed. Field settings in attached displays are not modified.'),
+      '#description' => t('Only list markup (eg, &lt;ol&gt;&lt;ul&gt;&lt;li&gt;) in the CSV export is changed. Other field settings in attached displays are not modified.'),
     );
     $form['list_separator'] = array(
       '#type' => 'textfield',
-      '#title' => t('List-item separator'),
+      '#title' => t('List-item separator character or characters'),
       '#default_value' => isset($this->options['list_separator']) ? $this->options['list_separator'] : ',',
       '#size' => 12,
       '#maxlength' => 255,
-      '#description' => t('For example, ", " or "; ". Enter "\n" for a line break.'),
+      '#description' => t('Examples: , ; - ~ etc. Enter "\n" for a line break. You may enter multiple characters. Make sure to enable "Quote values" setting above.'),
       '#states' => array(
         'visible' => array(
           ':input[name="style_options[convert_lists]"]' => array('checked' => TRUE),
