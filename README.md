@@ -30,8 +30,9 @@ Ex:
 
 ## Why do I need this?
 
-If you create "reports" for users, using the Views module, and typically give the
-ability to export the report as a CSV file, this module may be for you.
+If you use the Views module to create "reports" for your users, and in addition
+to giving them an attractive, filterable view in the browser, you also give them
+the ability to export the report as a CSV file, this module may be for you.
 
 
 ## Help and Setup
