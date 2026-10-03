@@ -2,19 +2,19 @@
 
 This module changes ordered/unordered values in a multi-value field
 into a simple comma, newline, etc., when you create a Data Export display as a CSV.
-You do not need to manually override any field values.
+You do not need to manually override the field's display values.
 
 For example, if your normal page view uses a table and has columns that look like this:
 
 | Date    | Friends |
-|-------- |---------|
+|--- 	  |---	    |
 |1/1/2026 | - Jeff  |
 |         | - Sally |
 |         | - Ralf  |
-|---------|---------|
+|---	  |---      |
 |1/6/2026 | - Bill  |
 |         | - June  |
-|---------|---------|
+
 
 And you then create a Views Data Export as a CSV, you can change the format settings
 to convert the list elements into a simple comma-separated list, without having to
