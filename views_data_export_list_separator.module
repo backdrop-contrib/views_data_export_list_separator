@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Adds list-value separators to Views Data Export CSV displays.
+ */
+
+/**
+ * Implements hook_autoload_info().
+ */
+function views_data_export_list_separator_autoload_info() {
+  return array(
+    'views_data_export_list_separator_plugin_style_export_csv' => 'plugins/views_data_export_list_separator_plugin_style_export_csv.inc',
+  );
+}
+
+/**
+ * Implements hook_views_plugins_alter().
+ */
+function views_data_export_list_separator_views_plugins_alter(&$plugins) {
+  if (isset($plugins['style']['views_data_export_csv'])) {
+    $plugins['style']['views_data_export_csv']['handler'] = 'views_data_export_list_separator_plugin_style_export_csv';
+  }
+}

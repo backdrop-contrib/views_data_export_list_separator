@@ -1,0 +1,8 @@
+name = Views Data Export List Separator
+description = "Adds a configurable separator for ordered and unordered lists in CSV exports."
+package = Views
+backdrop = 1.x
+type = module
+
+dependencies[] = views
+dependencies[] = views_data_export
