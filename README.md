@@ -28,6 +28,11 @@ Ex:
 "1/6/2026","Bill, June"
 ```
 
+## Why do I need this?
+
+If you create "reports" for users, using the Views module, and typically give the
+ability to export the report as a CSV file, this module may be for you.
+
 
 ## Help and Setup
 
@@ -42,13 +47,10 @@ its settings. The module adds the following options towards the bottom of the fo
 - **List-item separator.** The default is a comma. Enter any text to use it
   between items, such as `, ` or `; `. Enter `\n` to use a newline.
 
-Existing CSV exports are unchanged until the checkbox is enabled. The source
+Existing CSV exports are unchanged until this behavior is enabled. The source
 display's field formatter is never changed, so it may continue rendering list
 markup for browser output.
 
-**Example:** A field rendered as `<ul><li>Alpha</li><li>Bravo</li></ul>` is
-exported as `Alpha,Bravo` with the default separator, or as two lines when
-the separator is `\n`.
 
 
 ## Roadmap
