@@ -29,7 +29,7 @@ Ex:
 ```
 
 
-# Help and Setup
+## Help and Setup
 
 Create your view normally, and add a Data Export display.
 
@@ -49,6 +49,11 @@ markup for browser output.
 **Example:** A field rendered as `<ul><li>Alpha</li><li>Bravo</li></ul>` is
 exported as `Alpha,Bravo` with the default separator, or as two lines when
 the separator is `\n`.
+
+
+## Roadmap
+
+- Add this same functionality to XLS exports as well as CSV.
 
 
 ## Current Maintainers
