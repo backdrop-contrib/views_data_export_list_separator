@@ -146,10 +146,10 @@ function views_data_export_list_separator_convert_lists($html, $separator) {
 /**
  * Returns the inner HTML of a DOM node.
  */
-function views_data_export_list_separator_inner_html(DOMNode $node) {
+function views_data_export_list_separator_inner_html(DOMNode $domnode) {
   $html = '';
-  foreach ($node->childNodes as $child) {
-    $html .= $node->ownerDocument->saveHTML($child);
+  foreach ($domnode->childNodes as $child) {
+    $html .= $domnode->ownerDocument->saveHTML($child);
   }
   return $html;
 }
